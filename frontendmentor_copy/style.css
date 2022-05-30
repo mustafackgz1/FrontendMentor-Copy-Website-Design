@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #f5f1f1;
+}
+
+/* ----- HEADER START ----- */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+}
+.header .baslik{
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: 15px;
+}
+.header .links ul li{
+    display: inline-block;
+    font-size: 13px;
+    padding: 6px;
+    font-style: italic;
+    line-height: 2px;
+    margin: 10px 0;
+}
+.header .links{
+    padding-right: -5px;
+}
+.header .links a{
+    color: #000;
+    font-weight: 800;
+}
+.header .links .pro{
+    background-color: #383bdd;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-left:6px;
+    margin-right: 6px;
+    color: #fff;
+    font-style: normal;
+}
+.header .links #btn1{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: #fff;
+    margin-left: 25px;
+    transition: .3s;
+}
+.header .links #btn1:hover{
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+.header .links #btn1 i{
+    font-size: 18px;
+    padding-left: 5px;
+}
+hr{
+    opacity: 0.6;
+}
+
+/* ----- HEADER FINISH ----- */
+
+
+
+/* ----- ABOUT1 START ----- */
+.about1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 80px 150px;
+}
+.about1 .content1{
+    max-width: 550px;
+    float: left;
+}
+.about1 .content1 h1{
+    font-size: 50px;
+    color: #3032a5d8;
+}
+.about1 .content1 p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.about1 .content1 a{
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 15px 50px;
+    background-color: rgb(231, 31, 31);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.about1 .content1 a:hover{
+    font-size: 18px;
+}
+.about1 .content1 a i{
+    padding-left: 5px;
+}
+
+.about1::before{
+    content: '[';
+    position: absolute;
+    font-size: 100px;
+    color: #e589dcb2;
+    top: 6%;
+    left: 70%;
+    z-index: -1;
+}
+.about1::after{
+    content: '|';
+    position: absolute;
+    font-size: 125px;
+    font-weight: lighter;
+    color: #1b73d83d;
+    top: 10%;
+    right: 12%;
+}
+.about1 .content1::before{
+    content: '>';
+    position: absolute;
+    font-size: 100px;
+    color: pink;
+    top: 60%;
+    left: 65%;
+}
+
+.about1 .content1::after{
+    content: '{{{';
+    position: absolute;
+    font-size: 100px;
+    color: rgba(52, 120, 245, 0.24);
+    top: 40%;
+    left: 48%;
+}
+.about1 .content2::before{
+    content: 'O';
+    position: absolute;
+    font-size: 150px;
+    font-weight: lighter;
+    color: rgba(52, 120, 245, 0.24);
+    top: 50%;
+    left: 87%;
+}
+/* ----- ABOUT1 FINISH ----- */
+
+
+/* ----- ABOUT2 START ----- */
+.about2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 150px 150px
+}
+.about2 .title{
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.about2 .paragraf{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 100px 100px;
+}
+.about2 .paragraf .part{
+    padding: 0 35px;
+}
+.about2 .paragraf .part i{
+    font-size: 50px;
+    color: #4446bebd;
+}
+.about2 .paragraf .part h2{
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: normal;
+}
+.about2 .paragraf .part p{
+    font-size: 16px;
+}
+/* ----- ABOUT2 FINISH ----- */
+
+
+/* ----- ABOUT3 START ----- */
+.about3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3E54A3;
+    margin: 40px 200px;
+    padding: 120px 50px;
+    border-radius: 10px;
+}
+.about3 .about3-picture{
+    position: absolute;
+    background-image: url(img/slack.png);
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+    transform: translate(105%, 30%);
+    opacity: 0.1;
+}
+.about3 h2{
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+
+}
+.about3 h3{
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    font-weight: 900;
+}
+.about3 p{
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 100px;
+    color: #fff;
+}
+.about3 .email input{
+    font-size: 20px;
+    width: 500px;
+    background-color: #3E54A3;
+    border-color: #fff;
+    padding: 10px;
+    color: #fff;   
+}
+.about3 .email button{
+    font-size: 20px;
+    padding: 10px 25px;
+    margin-left: 20px;
+    border-radius: 30px;
+    color: #3E54A3;
+    border-color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.about3 .email button:hover{
+    font-size: 21px;
+}
+/* ----- ABOUT3 FINISH ----- */
+
+
+/* ----- ABOUT3 START ----- */
+.footer1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 200px;
+    padding: 50px 25px;
+}
+
+.footer1 .texts h2{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.footer1 .texts p{
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.footer1 .texts .check{
+    margin-bottom: 25px;
+}
+.footer1 .texts .check .tick{
+    font-size: 25px;
+}
+.footer1 .texts .check label{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.footer1 .texts .submail{
+    font-size: 15px;
+    width: 400px;
+    padding: 5px;
+}
+.footer1 .texts a{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    padding: 6px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: rgba(228, 20, 20, 0.767);
+    transition: 0.3s;
+}
+.footer1 .texts a:hover{
+    font-size: 22px;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.footer-hr{
+    opacity: 1;
+    color: gray;
+}
+/* ----- ABOUT3 FINISH ----- */
+
+
+/* ----- FOOTER2 START ----- */
+.footer2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 60px 0;
+}
+.footer2-part1, .footer2-part2, .footer2-part3{
+    display: block;
+    flex-direction: column;
+}
+.footer2-part1, .footer2-part2, .footer2-part3, .footer2-part4{
+    margin: 0 50px;
+}
+.footer2 .footer2-part4 i{
+    font-size: 40px;
+    margin-left: 20px;
+    color: #000;
+    transition: 0.5s;
+}
+.footer2 .footer2-part4 i:hover{
+    font-size: 50px;
+}
+.footer2 h2{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.footer2 p,a{
+    font-size: 18px;
+}
+.footer2 li{
+    margin-bottom: 10px;
+}
+.footer2 li a{
+    color: rgb(207, 89, 10);
+    border-bottom: 2px solid #000;
+    transition: 0.5s;
+}
+.footer2 li a:hover{
+    color: #000;
+    border-color: rgb(207, 89, 10);
+}
+/* ----- FOOTER2 FINISH ----- */
+
+
+.footer3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 30px 0;
+    opacity: 0.7;
+}
+
+.footer3 h5{
+    font-weight: 400;
+    color: #000;
+}
+.footer3 .footer3-links{
+    display: flex;
+}
+.footer3 a{
+    font-size: 13px;
+    margin: 0 20px;
+    color: #000;
+    transition: 0.5;
+}
+.footer3 a:hover{
+    border-bottom: 1px solid #000;
+}
